@@ -1,0 +1,150 @@
+make -f GNUmakefile.HelloWorld_Idl all
+make[1]: Entering directory '/home/quynhpp/Workspace/OpenDDS_example/hello_world'
+touch .depend.HelloWorld_Idl_Idl2
+touch .depend.HelloWorld_Idl_Idl1
+touch .depend.HelloWorld_Idl
+
+GNUmakefile: /home/quynhpp/Workspace/OpenDDS_example/hello_world/GNUmakefile.HelloWorld_Idl MAKEFLAGS=w
+
+/home/quynhpp/Workspace/OpenDDS/OpenDDS/bin/opendds_idl -Sa -St Messenger.idl
+processing Messenger.idl
+/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/bin/tao_idl -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO --idl-version 4 --unknown-annotations ignore -Sa -St -I/home/quynhpp/Workspace/OpenDDS/OpenDDS MessengerTypeSupport.idl
+processing MessengerTypeSupport.idl
+/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/bin/tao_idl -Wb,pre_include=ace/pre.h -Wb,post_include=ace/post.h -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO --idl-version 4 --unknown-annotations ignore -Sa -St -I/home/quynhpp/Workspace/OpenDDS/OpenDDS Messenger.idl
+processing Messenger.idl
+make[1]: Leaving directory '/home/quynhpp/Workspace/OpenDDS_example/hello_world'
+make -f GNUmakefile.HelloWorld_Publisher all
+make[1]: Entering directory '/home/quynhpp/Workspace/OpenDDS_example/hello_world'
+touch .depend.HelloWorld_Publisher_Idl2
+touch .depend.HelloWorld_Publisher_Idl1
+touch .depend.HelloWorld_Publisher
+
+GNUmakefile: /home/quynhpp/Workspace/OpenDDS_example/hello_world/GNUmakefile.HelloWorld_Publisher MAKEFLAGS=w
+
+g++ -fvisibility=hidden -fvisibility-inlines-hidden -Wnon-virtual-dtor -ggdb -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -D_GNU_SOURCE   -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -D__ACE_INLINE__ -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO -I/home/quynhpp/Workspace/OpenDDS/OpenDDS  -c -o .obj/MessengerTypeSupportC.o MessengerTypeSupportC.cpp
+g++ -fvisibility=hidden -fvisibility-inlines-hidden -Wnon-virtual-dtor -ggdb -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -D_GNU_SOURCE   -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -D__ACE_INLINE__ -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO -I/home/quynhpp/Workspace/OpenDDS/OpenDDS  -c -o .obj/MessengerTypeSupportS.o MessengerTypeSupportS.cpp
+g++ -fvisibility=hidden -fvisibility-inlines-hidden -Wnon-virtual-dtor -ggdb -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -D_GNU_SOURCE   -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -D__ACE_INLINE__ -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO -I/home/quynhpp/Workspace/OpenDDS/OpenDDS  -c -o .obj/MessengerC.o MessengerC.cpp
+g++ -fvisibility=hidden -fvisibility-inlines-hidden -Wnon-virtual-dtor -ggdb -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -D_GNU_SOURCE   -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -D__ACE_INLINE__ -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO -I/home/quynhpp/Workspace/OpenDDS/OpenDDS  -c -o .obj/MessengerS.o MessengerS.cpp
+g++ -fvisibility=hidden -fvisibility-inlines-hidden -Wnon-virtual-dtor -ggdb -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -D_GNU_SOURCE   -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -D__ACE_INLINE__ -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO -I/home/quynhpp/Workspace/OpenDDS/OpenDDS  -c -o .obj/MessengerTypeSupportImpl.o MessengerTypeSupportImpl.cpp
+In file included from /home/quynhpp/Workspace/OpenDDS/OpenDDS/dds/DCPS/DataReaderImpl_T.h:13:0,
+                 from MessengerTypeSupportImpl.cpp:8:
+/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Bound_Ptr.h:121:34: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   explicit ACE_Strong_Bound_Ptr (auto_ptr<X> p);
+                                  ^~~~~~~~
+In file included from /usr/include/c++/7/memory:80:0,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Auto_Ptr.h:78,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/String_Base.cpp:9,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/String_Base.h:882,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/SString.h:23,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/CDR.h:61,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/UB_String_Argument_T.cpp:7,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/UB_String_Argument_T.h:177,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/Any_Insert_Policy_T.h:18,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/Basic_Arguments.h:25,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/orb_typesC.h:47,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/ORB.h:28,
+                 from MessengerC.h:44,
+                 from MessengerTypeSupportImpl.h:5,
+                 from MessengerTypeSupportImpl.cpp:2:
+/usr/include/c++/7/bits/unique_ptr.h:51:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^~~~~~~~
+In file included from /home/quynhpp/Workspace/OpenDDS/OpenDDS/dds/DCPS/DataReaderImpl_T.h:13:0,
+                 from MessengerTypeSupportImpl.cpp:8:
+/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Bound_Ptr.h:222:15: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   void reset (auto_ptr<X> p);
+               ^~~~~~~~
+In file included from /usr/include/c++/7/memory:80:0,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Auto_Ptr.h:78,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/String_Base.cpp:9,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/String_Base.h:882,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/SString.h:23,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/CDR.h:61,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/UB_String_Argument_T.cpp:7,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/UB_String_Argument_T.h:177,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/Any_Insert_Policy_T.h:18,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/Basic_Arguments.h:25,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/orb_typesC.h:47,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/ORB.h:28,
+                 from MessengerC.h:44,
+                 from MessengerTypeSupportImpl.h:5,
+                 from MessengerTypeSupportImpl.cpp:2:
+/usr/include/c++/7/bits/unique_ptr.h:51:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^~~~~~~~
+In file included from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Bound_Ptr.h:385:0,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/dds/DCPS/DataReaderImpl_T.h:13,
+                 from MessengerTypeSupportImpl.cpp:8:
+/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Bound_Ptr.inl:152:58: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+ ACE_Strong_Bound_Ptr<X, ACE_LOCK>::ACE_Strong_Bound_Ptr (auto_ptr<X> p)
+                                                          ^~~~~~~~
+In file included from /usr/include/c++/7/memory:80:0,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Auto_Ptr.h:78,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/String_Base.cpp:9,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/String_Base.h:882,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/SString.h:23,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/CDR.h:61,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/UB_String_Argument_T.cpp:7,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/UB_String_Argument_T.h:177,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/Any_Insert_Policy_T.h:18,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/Basic_Arguments.h:25,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/orb_typesC.h:47,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/ORB.h:28,
+                 from MessengerC.h:44,
+                 from MessengerTypeSupportImpl.h:5,
+                 from MessengerTypeSupportImpl.cpp:2:
+/usr/include/c++/7/bits/unique_ptr.h:51:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^~~~~~~~
+In file included from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Bound_Ptr.h:385:0,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/dds/DCPS/DataReaderImpl_T.h:13,
+                 from MessengerTypeSupportImpl.cpp:8:
+/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Bound_Ptr.inl:307:43: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+ ACE_Strong_Bound_Ptr<X, ACE_LOCK>::reset (auto_ptr<X> p)
+                                           ^~~~~~~~
+In file included from /usr/include/c++/7/memory:80:0,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/Auto_Ptr.h:78,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/String_Base.cpp:9,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/String_Base.h:882,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/ace/SString.h:23,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/CDR.h:61,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/UB_String_Argument_T.cpp:7,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/UB_String_Argument_T.h:177,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/Any_Insert_Policy_T.h:18,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/Basic_Arguments.h:25,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/orb_typesC.h:47,
+                 from /home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO/tao/ORB.h:28,
+                 from MessengerC.h:44,
+                 from MessengerTypeSupportImpl.h:5,
+                 from MessengerTypeSupportImpl.cpp:2:
+/usr/include/c++/7/bits/unique_ptr.h:51:28: note: declared here
+   template<typename> class auto_ptr;
+                            ^~~~~~~~
+g++ -fvisibility=hidden -fvisibility-inlines-hidden -Wnon-virtual-dtor -ggdb -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -D_GNU_SOURCE   -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -D__ACE_INLINE__ -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO -I/home/quynhpp/Workspace/OpenDDS/OpenDDS  -c -o .obj/Publisher.o Publisher.cpp
+Publisher.cpp: In function ‘int main(int, char**)’:
+Publisher.cpp:3:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+ int main(int argc, char **argv) {
+              ^~~~
+Publisher.cpp:3:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+ int main(int argc, char **argv) {
+                           ^~~~
+g++ -fvisibility=hidden -fvisibility-inlines-hidden -Wnon-virtual-dtor -ggdb -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -D_GNU_SOURCE   -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -D__ACE_INLINE__ -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO -I/home/quynhpp/Workspace/OpenDDS/OpenDDS   -Wl,-E -L/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/lib -L/home/quynhpp/Workspace/OpenDDS/OpenDDS/lib -L.  -L/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/lib  -L/home/quynhpp/Workspace/OpenDDS/OpenDDS/lib  -o publisher .obj/MessengerTypeSupportC.o .obj/MessengerTypeSupportS.o .obj/MessengerC.o .obj/MessengerS.o .obj/MessengerTypeSupportImpl.o .obj/Publisher.o -lOpenDDS_Rtps_Udp -lOpenDDS_Rtps -lOpenDDS_Tcp -lOpenDDS_InfoRepoDiscovery -lOpenDDS_Dcps -lTAO_BiDirGIOP -lTAO_PI -lTAO_CodecFactory -lTAO_PortableServer -lTAO_AnyTypeCode -lTAO -lACE -ldl -lrt 
+make[1]: Leaving directory '/home/quynhpp/Workspace/OpenDDS_example/hello_world'
+make -f GNUmakefile.HelloWorld_Subscriber all
+make[1]: Entering directory '/home/quynhpp/Workspace/OpenDDS_example/hello_world'
+touch .depend.HelloWorld_Subscriber_Idl2
+touch .depend.HelloWorld_Subscriber_Idl1
+touch .depend.HelloWorld_Subscriber
+
+GNUmakefile: /home/quynhpp/Workspace/OpenDDS_example/hello_world/GNUmakefile.HelloWorld_Subscriber MAKEFLAGS=w
+
+g++ -fvisibility=hidden -fvisibility-inlines-hidden -Wnon-virtual-dtor -ggdb -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -D_GNU_SOURCE   -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -D__ACE_INLINE__ -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO -I/home/quynhpp/Workspace/OpenDDS/OpenDDS  -c -o .obj/Subscriber.o Subscriber.cpp
+Subscriber.cpp: In function ‘int main(int, char**)’:
+Subscriber.cpp:3:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+ int main(int argc, char **argv) {
+              ^~~~
+Subscriber.cpp:3:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+ int main(int argc, char **argv) {
+                           ^~~~
+g++ -fvisibility=hidden -fvisibility-inlines-hidden -Wnon-virtual-dtor -ggdb -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -D_GNU_SOURCE   -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -D__ACE_INLINE__ -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers -I/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO -I/home/quynhpp/Workspace/OpenDDS/OpenDDS   -Wl,-E -L/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/lib -L/home/quynhpp/Workspace/OpenDDS/OpenDDS/lib -L.  -L/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/lib  -L/home/quynhpp/Workspace/OpenDDS/OpenDDS/lib  -o subscriber .obj/MessengerTypeSupportImpl.o .obj/MessengerS.o .obj/MessengerC.o .obj/MessengerTypeSupportS.o .obj/MessengerTypeSupportC.o .obj/Subscriber.o -lOpenDDS_Rtps_Udp -lOpenDDS_Rtps -lOpenDDS_Tcp -lOpenDDS_InfoRepoDiscovery -lOpenDDS_Dcps -lTAO_BiDirGIOP -lTAO_PI -lTAO_CodecFactory -lTAO_PortableServer -lTAO_AnyTypeCode -lTAO -lACE -ldl -lrt 
+make[1]: Leaving directory '/home/quynhpp/Workspace/OpenDDS_example/hello_world'
