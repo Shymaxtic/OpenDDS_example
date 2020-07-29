@@ -1,0 +1,5 @@
+// MWC file to make workspace
+
+workspace {
+    hello_world
+}

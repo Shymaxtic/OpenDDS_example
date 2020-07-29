@@ -1,0 +1,9 @@
+# OpenDDS configure script: ./configure --prefix=/user/local/lib
+export ACE_ROOT=/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers
+export CIAO_ROOT=unused
+export DANCE_ROOT=unused
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/lib:/home/quynhpp/Workspace/OpenDDS/OpenDDS/lib
+export DDS_ROOT=/home/quynhpp/Workspace/OpenDDS/OpenDDS
+export PATH=${PATH}:/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/bin:/home/quynhpp/Workspace/OpenDDS/OpenDDS/bin
+export MPC_ROOT=/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/MPC
+export TAO_ROOT=/home/quynhpp/Workspace/OpenDDS/OpenDDS/ACE_wrappers/TAO
