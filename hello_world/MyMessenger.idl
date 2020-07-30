@@ -3,10 +3,10 @@
  * See: http://www.opendds.org/license.html
  */
 
-module Messenger {
+module MyMessenger {
 
   @topic
-  struct Message {
+  struct MyMessage {
     string from;
     string subject;
     @key long subject_id;

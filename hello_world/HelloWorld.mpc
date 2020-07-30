@@ -3,7 +3,7 @@
 project(*idl): dcps {       // this creates project named HelloWorld_idl, inherits dcps
   requires += no_opendds_safety_profile
   TypeSupport_Files {       // the TypeSupport_Files has been defined in mpc.xsl
-    Messenger.idl           // The idl file will be compiled by OpenDDS_idl compiler
+    MyMessenger.idl           // The idl file will be compiled by OpenDDS_idl compiler
   }
 
   custom_only = 1
@@ -15,7 +15,7 @@ project(*publisher) : dcpsexe, dcps_tcp, dcps_rtps_udp {
   after    += *idl          // require building after built *idl
 
   TypeSupport_Files {
-    Messenger.idl
+    MyMessenger.idl
   }
 
   Source_Files {            // the Source_Files has been define in mpc.xsl
@@ -29,7 +29,7 @@ project(*subscriber) : dcpsexe, dcps_tcp, dcps_rtps_udp {
   after    += *publisher
 
   TypeSupport_Files {
-    Messenger.idl
+    MyMessenger.idl
   }
 
   Source_Files {

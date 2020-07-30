@@ -28,8 +28,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:152
 
-#ifndef _TAO_IDL_MESSENGERC_RMUNLK_H_
-#define _TAO_IDL_MESSENGERC_RMUNLK_H_
+#ifndef _TAO_IDL_MYMESSENGERC_W7OKQA_H_
+#define _TAO_IDL_MYMESSENGERC_W7OKQA_H_
 
 #include /**/ "ace/pre.h"
 
@@ -67,38 +67,38 @@
 // TAO_IDL - Generated from
 // be/be_visitor_module/module_ch.cpp:38
 
-namespace Messenger
+namespace MyMessenger
 {
 
   // TAO_IDL - Generated from
   // be/be_type.cpp:261
 
-  struct Message;
+  struct MyMessage;
 
   typedef
     ::TAO_Var_Var_T<
-        Message
+        MyMessage
       >
-    Message_var;
+    MyMessage_var;
 
   typedef
     ::TAO_Out_T<
-        Message
+        MyMessage
       >
-    Message_out;
+    MyMessage_out;
 
   // TAO_IDL - Generated from
   // be/be_visitor_structure/structure_ch.cpp:51
 
-  struct  Message
+  struct  MyMessage
   {
 
     // TAO_IDL - Generated from
     // be/be_type.cpp:307
 
     
-    typedef Message_var _var_type;
-    typedef Message_out _out_type;
+    typedef MyMessage_var _var_type;
+    typedef MyMessage_out _out_type;
     
     ::TAO::String_Manager from;
     ::TAO::String_Manager subject;
@@ -110,7 +110,7 @@ namespace Messenger
 // TAO_IDL - Generated from
 // be/be_visitor_module/module_ch.cpp:67
 
-} // module Messenger
+} // module MyMessenger
 
 // TAO_IDL - Generated from
 // be/be_visitor_arg_traits.cpp:68
@@ -126,10 +126,10 @@ namespace TAO
   // be/be_visitor_arg_traits.cpp:947
 
   template<>
-  class Arg_Traits< ::Messenger::Message>
+  class Arg_Traits< ::MyMessenger::MyMessage>
     : public
         Var_Size_Arg_Traits_T<
-            ::Messenger::Message,
+            ::MyMessenger::MyMessage,
             TAO::Any_Insert_Policy_Noop
           >
   {
@@ -159,8 +159,8 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
- ::CORBA::Boolean operator<< (TAO_OutputCDR &, const Messenger::Message &);
- ::CORBA::Boolean operator>> (TAO_InputCDR &, Messenger::Message &);
+ ::CORBA::Boolean operator<< (TAO_OutputCDR &, const MyMessenger::MyMessage &);
+ ::CORBA::Boolean operator>> (TAO_InputCDR &, MyMessenger::MyMessage &);
 
 TAO_END_VERSIONED_NAMESPACE_DECL
 
@@ -169,7 +169,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:1703
 #if defined (__ACE_INLINE__)
-#include "MessengerC.inl"
+#include "MyMessengerC.inl"
 #endif /* defined INLINE */
 
 #include /**/ "ace/post.h"

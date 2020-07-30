@@ -29,11 +29,11 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:652
 
-#ifndef _TAO_IDL_MESSENGERS_IR84GY_CPP_
-#define _TAO_IDL_MESSENGERS_IR84GY_CPP_
+#ifndef _TAO_IDL_MYMESSENGERTYPESUPPORTS_LIFC0P_CPP_
+#define _TAO_IDL_MYMESSENGERTYPESUPPORTS_LIFC0P_CPP_
 
 
-#include "MessengerS.h"
+#include "MyMessengerTypeSupportS.h"
 
 #endif /* ifndef */
 

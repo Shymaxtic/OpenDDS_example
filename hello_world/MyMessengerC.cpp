@@ -29,11 +29,11 @@
 // be/be_codegen.cpp:376
 
 
-#include "MessengerC.h"
+#include "MyMessengerC.h"
 #include "tao/CDR.h"
 
 #if !defined (__ACE_INLINE__)
-#include "MessengerC.inl"
+#include "MyMessengerC.inl"
 #endif /* !defined INLINE */
 
 // TAO_IDL - Generated from
@@ -43,7 +43,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator<< (
     TAO_OutputCDR &strm,
-    const Messenger::Message &_tao_aggregate)
+    const MyMessenger::MyMessage &_tao_aggregate)
 {
   return
     (strm << _tao_aggregate.from.in ()) &&
@@ -55,7 +55,7 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 
 ::CORBA::Boolean operator>> (
     TAO_InputCDR &strm,
-    Messenger::Message &_tao_aggregate)
+    MyMessenger::MyMessage &_tao_aggregate)
 {
   return
     (strm >> _tao_aggregate.from.out ()) &&

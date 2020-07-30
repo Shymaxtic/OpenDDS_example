@@ -28,12 +28,12 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:461
 
-#ifndef _TAO_IDL_MESSENGERS_IR84GY_H_
-#define _TAO_IDL_MESSENGERS_IR84GY_H_
+#ifndef _TAO_IDL_MYMESSENGERS_Y0QQLR_H_
+#define _TAO_IDL_MYMESSENGERS_Y0QQLR_H_
 
 #include /**/ "ace/pre.h"
 
-#include "MessengerC.h"
+#include "MyMessengerC.h"
 #include "tao/PortableServer/Basic_SArguments.h"
 #include "tao/PortableServer/Special_Basic_SArguments.h"
 #include "tao/PortableServer/Fixed_Size_SArgument_T.h"
@@ -59,10 +59,10 @@ namespace TAO
   // be/be_visitor_arg_traits.cpp:947
 
   template<>
-  class SArg_Traits< ::Messenger::Message>
+  class SArg_Traits< ::MyMessenger::MyMessage>
     : public
         Var_Size_SArg_Traits_T<
-            ::Messenger::Message,
+            ::MyMessenger::MyMessage,
             TAO::Any_Insert_Policy_Noop
           >
   {
@@ -76,14 +76,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 // TAO_IDL - Generated from
 // be/be_visitor_module/module_sh.cpp:38
 
-namespace POA_Messenger
+namespace POA_MyMessenger
 {
   
 
 // TAO_IDL - Generated from
 // be/be_visitor_module/module_sh.cpp:69
 
-} // module Messenger
+} // module MyMessenger
 
 #include /**/ "ace/post.h"
 

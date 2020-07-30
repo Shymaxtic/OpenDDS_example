@@ -28,13 +28,13 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:461
 
-#ifndef _TAO_IDL_MESSENGERTYPESUPPORTS_FUK5GC_H_
-#define _TAO_IDL_MESSENGERTYPESUPPORTS_FUK5GC_H_
+#ifndef _TAO_IDL_MYMESSENGERTYPESUPPORTS_LIFC0P_H_
+#define _TAO_IDL_MYMESSENGERTYPESUPPORTS_LIFC0P_H_
 
 #include /**/ "ace/pre.h"
 
-#include "MessengerTypeSupportC.h"
-#include "MessengerS.h"
+#include "MyMessengerTypeSupportC.h"
+#include "MyMessengerS.h"
 #include "dds/DdsDcpsInfrastructureS.h"
 #include "dds/DdsDcpsPublicationS.h"
 #include "dds/DdsDcpsSubscriptionExtS.h"
@@ -68,14 +68,14 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 // TAO_IDL - Generated from
 // be/be_visitor_module/module_sh.cpp:38
 
-namespace POA_Messenger
+namespace POA_MyMessenger
 {
   
 
 // TAO_IDL - Generated from
 // be/be_visitor_module/module_sh.cpp:69
 
-} // module Messenger
+} // module MyMessenger
 
 #include /**/ "ace/post.h"
 

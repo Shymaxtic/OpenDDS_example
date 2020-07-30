@@ -27,34 +27,34 @@ depend: HelloWorld_Idl-depend HelloWorld_Publisher-depend HelloWorld_Subscriber-
 REMAINING_TARGETS := $(filter-out all depend,$(TARGETS_NESTED:.nested=)) $(CUSTOM_TARGETS)
 .PHONY: $(REMAINING_TARGETS)
 
-$(REMAINING_TARGETS):	
-	$(KEEP_GOING)$(MAKE) -f GNUmakefile.HelloWorld_Idl $(@)
-	$(KEEP_GOING)$(MAKE) -f GNUmakefile.HelloWorld_Publisher $(@)
-	$(KEEP_GOING)$(MAKE) -f GNUmakefile.HelloWorld_Subscriber $(@)
+$(REMAINING_TARGETS):
+	$(KEEP_GOING)@$(MAKE) -f GNUmakefile.HelloWorld_Idl $(@)
+	$(KEEP_GOING)@$(MAKE) -f GNUmakefile.HelloWorld_Publisher $(@)
+	$(KEEP_GOING)@$(MAKE) -f GNUmakefile.HelloWorld_Subscriber $(@)
 
 .PHONY: HelloWorld_Idl
 HelloWorld_Idl:
-	$(KEEP_GOING)$(MAKE) -f GNUmakefile.HelloWorld_Idl all
+	$(KEEP_GOING)@$(MAKE) -f GNUmakefile.HelloWorld_Idl all
 
 .PHONY: HelloWorld_Idl-depend
 HelloWorld_Idl-depend:
-	$(KEEP_GOING)$(MAKE) -f GNUmakefile.HelloWorld_Idl depend
+	$(KEEP_GOING)@$(MAKE) -f GNUmakefile.HelloWorld_Idl depend
 
 .PHONY: HelloWorld_Publisher
 HelloWorld_Publisher: HelloWorld_Idl
-	$(KEEP_GOING)$(MAKE) -f GNUmakefile.HelloWorld_Publisher all
+	$(KEEP_GOING)@$(MAKE) -f GNUmakefile.HelloWorld_Publisher all
 
 .PHONY: HelloWorld_Publisher-depend
 HelloWorld_Publisher-depend:
-	$(KEEP_GOING)$(MAKE) -f GNUmakefile.HelloWorld_Publisher depend
+	$(KEEP_GOING)@$(MAKE) -f GNUmakefile.HelloWorld_Publisher depend
 
 .PHONY: HelloWorld_Subscriber
 HelloWorld_Subscriber: HelloWorld_Publisher
-	$(KEEP_GOING)$(MAKE) -f GNUmakefile.HelloWorld_Subscriber all
+	$(KEEP_GOING)@$(MAKE) -f GNUmakefile.HelloWorld_Subscriber all
 
 .PHONY: HelloWorld_Subscriber-depend
 HelloWorld_Subscriber-depend:
-	$(KEEP_GOING)$(MAKE) -f GNUmakefile.HelloWorld_Subscriber depend
+	$(KEEP_GOING)@$(MAKE) -f GNUmakefile.HelloWorld_Subscriber depend
 
 project_name_list:
 	@echo HelloWorld_Idl

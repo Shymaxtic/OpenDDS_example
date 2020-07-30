@@ -28,8 +28,8 @@
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:152
 
-#ifndef _TAO_IDL_MESSENGERTYPESUPPORTC_Q4QQLV_H_
-#define _TAO_IDL_MESSENGERTYPESUPPORTC_Q4QQLV_H_
+#ifndef _TAO_IDL_MYMESSENGERTYPESUPPORTC_1ZL09Q_H_
+#define _TAO_IDL_MYMESSENGERTYPESUPPORTC_1ZL09Q_H_
 
 #include /**/ "ace/pre.h"
 
@@ -62,7 +62,7 @@
 #include /**/ "tao/Version.h"
 #include /**/ "tao/Versioned_Namespace.h"
 
-#include "MessengerC.h"
+#include "MyMessengerC.h"
 #include "dds/DdsDcpsInfrastructureC.h"
 #include "dds/DdsDcpsPublicationC.h"
 #include "dds/DdsDcpsSubscriptionExtC.h"
@@ -81,42 +81,42 @@
 // TAO_IDL - Generated from
 // be/be_visitor_module/module_ch.cpp:38
 
-namespace Messenger
+namespace MyMessenger
 {
 
   // TAO_IDL - Generated from
   // be/be_visitor_sequence/sequence_ch.cpp:102
 
-  typedef ::TAO::DCPS::ZeroCopyDataSeq< Messenger::Message, DCPS_ZERO_COPY_SEQ_DEFAULT_SIZE> MessageSeq;
+  typedef ::TAO::DCPS::ZeroCopyDataSeq< MyMessenger::MyMessage, DCPS_ZERO_COPY_SEQ_DEFAULT_SIZE> MyMessageSeq;
   
 
   // TAO_IDL - Generated from
   // be/be_interface.cpp:751
 
-#if !defined (_MESSENGER_MESSAGETYPESUPPORT__VAR_OUT_CH_)
-#define _MESSENGER_MESSAGETYPESUPPORT__VAR_OUT_CH_
+#if !defined (_MYMESSENGER_MYMESSAGETYPESUPPORT__VAR_OUT_CH_)
+#define _MYMESSENGER_MYMESSAGETYPESUPPORT__VAR_OUT_CH_
 
-  class MessageTypeSupport;
-  typedef MessageTypeSupport *MessageTypeSupport_ptr;
+  class MyMessageTypeSupport;
+  typedef MyMessageTypeSupport *MyMessageTypeSupport_ptr;
 
   typedef
     TAO_Objref_Var_T<
-        MessageTypeSupport
+        MyMessageTypeSupport
       >
-    MessageTypeSupport_var;
+    MyMessageTypeSupport_var;
   
   typedef
     TAO_Objref_Out_T<
-        MessageTypeSupport
+        MyMessageTypeSupport
       >
-    MessageTypeSupport_out;
+    MyMessageTypeSupport_out;
 
 #endif /* end #if !defined */
 
   // TAO_IDL - Generated from
   // be/be_visitor_interface/interface_ch.cpp:43
 
-  class  MessageTypeSupport
+  class  MyMessageTypeSupport
     : public virtual ::OpenDDS::DCPS::TypeSupport
   
   {
@@ -125,18 +125,18 @@ namespace Messenger
     // TAO_IDL - Generated from
     // be/be_type.cpp:307
 
-    typedef MessageTypeSupport_ptr _ptr_type;
-    typedef MessageTypeSupport_var _var_type;
-    typedef MessageTypeSupport_out _out_type;
+    typedef MyMessageTypeSupport_ptr _ptr_type;
+    typedef MyMessageTypeSupport_var _var_type;
+    typedef MyMessageTypeSupport_out _out_type;
 
     // The static operations.
-    static MessageTypeSupport_ptr _duplicate (MessageTypeSupport_ptr obj);
+    static MyMessageTypeSupport_ptr _duplicate (MyMessageTypeSupport_ptr obj);
 
-    static void _tao_release (MessageTypeSupport_ptr obj);
+    static void _tao_release (MyMessageTypeSupport_ptr obj);
 
-    static MessageTypeSupport_ptr _narrow (::CORBA::Object_ptr obj);
-    static MessageTypeSupport_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
-    static MessageTypeSupport_ptr _nil (void);
+    static MyMessageTypeSupport_ptr _narrow (::CORBA::Object_ptr obj);
+    static MyMessageTypeSupport_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
+    static MyMessageTypeSupport_ptr _nil (void);
 
     // TAO_IDL - Generated from
     // be/be_visitor_interface/interface_ch.cpp:140
@@ -147,46 +147,46 @@ namespace Messenger
   
   protected:
     // Abstract or local interface only.
-    MessageTypeSupport (void);
+    MyMessageTypeSupport (void);
 
     
 
-    virtual ~MessageTypeSupport (void);
+    virtual ~MyMessageTypeSupport (void);
   
   private:
     // Private and unimplemented for concrete interfaces.
-    MessageTypeSupport (const MessageTypeSupport &);
+    MyMessageTypeSupport (const MyMessageTypeSupport &);
 
-    void operator= (const MessageTypeSupport &);
+    void operator= (const MyMessageTypeSupport &);
   };
 
   // TAO_IDL - Generated from
   // be/be_interface.cpp:751
 
-#if !defined (_MESSENGER_MESSAGEDATAWRITER__VAR_OUT_CH_)
-#define _MESSENGER_MESSAGEDATAWRITER__VAR_OUT_CH_
+#if !defined (_MYMESSENGER_MYMESSAGEDATAWRITER__VAR_OUT_CH_)
+#define _MYMESSENGER_MYMESSAGEDATAWRITER__VAR_OUT_CH_
 
-  class MessageDataWriter;
-  typedef MessageDataWriter *MessageDataWriter_ptr;
+  class MyMessageDataWriter;
+  typedef MyMessageDataWriter *MyMessageDataWriter_ptr;
 
   typedef
     TAO_Objref_Var_T<
-        MessageDataWriter
+        MyMessageDataWriter
       >
-    MessageDataWriter_var;
+    MyMessageDataWriter_var;
   
   typedef
     TAO_Objref_Out_T<
-        MessageDataWriter
+        MyMessageDataWriter
       >
-    MessageDataWriter_out;
+    MyMessageDataWriter_out;
 
 #endif /* end #if !defined */
 
   // TAO_IDL - Generated from
   // be/be_visitor_interface/interface_ch.cpp:43
 
-  class  MessageDataWriter
+  class  MyMessageDataWriter
     : public virtual ::DDS::DataWriter
   
   {
@@ -195,59 +195,59 @@ namespace Messenger
     // TAO_IDL - Generated from
     // be/be_type.cpp:307
 
-    typedef MessageDataWriter_ptr _ptr_type;
-    typedef MessageDataWriter_var _var_type;
-    typedef MessageDataWriter_out _out_type;
+    typedef MyMessageDataWriter_ptr _ptr_type;
+    typedef MyMessageDataWriter_var _var_type;
+    typedef MyMessageDataWriter_out _out_type;
 
     // The static operations.
-    static MessageDataWriter_ptr _duplicate (MessageDataWriter_ptr obj);
+    static MyMessageDataWriter_ptr _duplicate (MyMessageDataWriter_ptr obj);
 
-    static void _tao_release (MessageDataWriter_ptr obj);
+    static void _tao_release (MyMessageDataWriter_ptr obj);
 
-    static MessageDataWriter_ptr _narrow (::CORBA::Object_ptr obj);
-    static MessageDataWriter_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
-    static MessageDataWriter_ptr _nil (void);
+    static MyMessageDataWriter_ptr _narrow (::CORBA::Object_ptr obj);
+    static MyMessageDataWriter_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
+    static MyMessageDataWriter_ptr _nil (void);
 
     virtual ::DDS::InstanceHandle_t register_instance (
-      const ::Messenger::Message & instance) = 0;
+      const ::MyMessenger::MyMessage & instance) = 0;
 
     virtual ::DDS::InstanceHandle_t register_instance_w_timestamp (
-      const ::Messenger::Message & instance,
+      const ::MyMessenger::MyMessage & instance,
       const ::DDS::Time_t & timestamp) = 0;
 
     virtual ::DDS::ReturnCode_t unregister_instance (
-      const ::Messenger::Message & instance,
+      const ::MyMessenger::MyMessage & instance,
       ::DDS::InstanceHandle_t handle) = 0;
 
     virtual ::DDS::ReturnCode_t unregister_instance_w_timestamp (
-      const ::Messenger::Message & instance,
+      const ::MyMessenger::MyMessage & instance,
       ::DDS::InstanceHandle_t handle,
       const ::DDS::Time_t & timestamp) = 0;
 
     virtual ::DDS::ReturnCode_t write (
-      const ::Messenger::Message & instance_data,
+      const ::MyMessenger::MyMessage & instance_data,
       ::DDS::InstanceHandle_t handle) = 0;
 
     virtual ::DDS::ReturnCode_t write_w_timestamp (
-      const ::Messenger::Message & instance_data,
+      const ::MyMessenger::MyMessage & instance_data,
       ::DDS::InstanceHandle_t handle,
       const ::DDS::Time_t & source_timestamp) = 0;
 
     virtual ::DDS::ReturnCode_t dispose (
-      const ::Messenger::Message & instance_data,
+      const ::MyMessenger::MyMessage & instance_data,
       ::DDS::InstanceHandle_t instance_handle) = 0;
 
     virtual ::DDS::ReturnCode_t dispose_w_timestamp (
-      const ::Messenger::Message & instance_data,
+      const ::MyMessenger::MyMessage & instance_data,
       ::DDS::InstanceHandle_t instance_handle,
       const ::DDS::Time_t & source_timestamp) = 0;
 
     virtual ::DDS::ReturnCode_t get_key_value (
-      ::Messenger::Message & key_holder,
+      ::MyMessenger::MyMessage & key_holder,
       ::DDS::InstanceHandle_t handle) = 0;
 
     virtual ::DDS::InstanceHandle_t lookup_instance (
-      const ::Messenger::Message & instance_data) = 0;
+      const ::MyMessenger::MyMessage & instance_data) = 0;
 
     // TAO_IDL - Generated from
     // be/be_visitor_interface/interface_ch.cpp:140
@@ -258,46 +258,46 @@ namespace Messenger
   
   protected:
     // Abstract or local interface only.
-    MessageDataWriter (void);
+    MyMessageDataWriter (void);
 
     
 
-    virtual ~MessageDataWriter (void);
+    virtual ~MyMessageDataWriter (void);
   
   private:
     // Private and unimplemented for concrete interfaces.
-    MessageDataWriter (const MessageDataWriter &);
+    MyMessageDataWriter (const MyMessageDataWriter &);
 
-    void operator= (const MessageDataWriter &);
+    void operator= (const MyMessageDataWriter &);
   };
 
   // TAO_IDL - Generated from
   // be/be_interface.cpp:751
 
-#if !defined (_MESSENGER_MESSAGEDATAREADER__VAR_OUT_CH_)
-#define _MESSENGER_MESSAGEDATAREADER__VAR_OUT_CH_
+#if !defined (_MYMESSENGER_MYMESSAGEDATAREADER__VAR_OUT_CH_)
+#define _MYMESSENGER_MYMESSAGEDATAREADER__VAR_OUT_CH_
 
-  class MessageDataReader;
-  typedef MessageDataReader *MessageDataReader_ptr;
+  class MyMessageDataReader;
+  typedef MyMessageDataReader *MyMessageDataReader_ptr;
 
   typedef
     TAO_Objref_Var_T<
-        MessageDataReader
+        MyMessageDataReader
       >
-    MessageDataReader_var;
+    MyMessageDataReader_var;
   
   typedef
     TAO_Objref_Out_T<
-        MessageDataReader
+        MyMessageDataReader
       >
-    MessageDataReader_out;
+    MyMessageDataReader_out;
 
 #endif /* end #if !defined */
 
   // TAO_IDL - Generated from
   // be/be_visitor_interface/interface_ch.cpp:43
 
-  class  MessageDataReader
+  class  MyMessageDataReader
     : public virtual ::OpenDDS::DCPS::DataReaderEx
   
   {
@@ -306,21 +306,21 @@ namespace Messenger
     // TAO_IDL - Generated from
     // be/be_type.cpp:307
 
-    typedef MessageDataReader_ptr _ptr_type;
-    typedef MessageDataReader_var _var_type;
-    typedef MessageDataReader_out _out_type;
+    typedef MyMessageDataReader_ptr _ptr_type;
+    typedef MyMessageDataReader_var _var_type;
+    typedef MyMessageDataReader_out _out_type;
 
     // The static operations.
-    static MessageDataReader_ptr _duplicate (MessageDataReader_ptr obj);
+    static MyMessageDataReader_ptr _duplicate (MyMessageDataReader_ptr obj);
 
-    static void _tao_release (MessageDataReader_ptr obj);
+    static void _tao_release (MyMessageDataReader_ptr obj);
 
-    static MessageDataReader_ptr _narrow (::CORBA::Object_ptr obj);
-    static MessageDataReader_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
-    static MessageDataReader_ptr _nil (void);
+    static MyMessageDataReader_ptr _narrow (::CORBA::Object_ptr obj);
+    static MyMessageDataReader_ptr _unchecked_narrow (::CORBA::Object_ptr obj);
+    static MyMessageDataReader_ptr _nil (void);
 
     virtual ::DDS::ReturnCode_t read (
-      ::Messenger::MessageSeq & received_data,
+      ::MyMessenger::MyMessageSeq & received_data,
       ::DDS::SampleInfoSeq & info_seq,
       ::CORBA::Long max_samples,
       ::DDS::SampleStateMask sample_states,
@@ -328,7 +328,7 @@ namespace Messenger
       ::DDS::InstanceStateMask instance_states) = 0;
 
     virtual ::DDS::ReturnCode_t take (
-      ::Messenger::MessageSeq & received_data,
+      ::MyMessenger::MyMessageSeq & received_data,
       ::DDS::SampleInfoSeq & info_seq,
       ::CORBA::Long max_samples,
       ::DDS::SampleStateMask sample_states,
@@ -336,27 +336,27 @@ namespace Messenger
       ::DDS::InstanceStateMask instance_states) = 0;
 
     virtual ::DDS::ReturnCode_t read_w_condition (
-      ::Messenger::MessageSeq & data_values,
+      ::MyMessenger::MyMessageSeq & data_values,
       ::DDS::SampleInfoSeq & sample_infos,
       ::CORBA::Long max_samples,
       ::DDS::ReadCondition_ptr a_condition) = 0;
 
     virtual ::DDS::ReturnCode_t take_w_condition (
-      ::Messenger::MessageSeq & data_values,
+      ::MyMessenger::MyMessageSeq & data_values,
       ::DDS::SampleInfoSeq & sample_infos,
       ::CORBA::Long max_samples,
       ::DDS::ReadCondition_ptr a_condition) = 0;
 
     virtual ::DDS::ReturnCode_t read_next_sample (
-      ::Messenger::Message & received_data,
+      ::MyMessenger::MyMessage & received_data,
       ::DDS::SampleInfo & sample_info) = 0;
 
     virtual ::DDS::ReturnCode_t take_next_sample (
-      ::Messenger::Message & received_data,
+      ::MyMessenger::MyMessage & received_data,
       ::DDS::SampleInfo & sample_info) = 0;
 
     virtual ::DDS::ReturnCode_t read_instance (
-      ::Messenger::MessageSeq & received_data,
+      ::MyMessenger::MyMessageSeq & received_data,
       ::DDS::SampleInfoSeq & info_seq,
       ::CORBA::Long max_samples,
       ::DDS::InstanceHandle_t a_handle,
@@ -365,7 +365,7 @@ namespace Messenger
       ::DDS::InstanceStateMask instance_states) = 0;
 
     virtual ::DDS::ReturnCode_t take_instance (
-      ::Messenger::MessageSeq & received_data,
+      ::MyMessenger::MyMessageSeq & received_data,
       ::DDS::SampleInfoSeq & info_seq,
       ::CORBA::Long max_samples,
       ::DDS::InstanceHandle_t a_handle,
@@ -374,21 +374,21 @@ namespace Messenger
       ::DDS::InstanceStateMask instance_states) = 0;
 
     virtual ::DDS::ReturnCode_t read_instance_w_condition (
-      ::Messenger::MessageSeq & received_data,
+      ::MyMessenger::MyMessageSeq & received_data,
       ::DDS::SampleInfoSeq & sample_infos,
       ::CORBA::Long max_samples,
       ::DDS::InstanceHandle_t a_handle,
       ::DDS::ReadCondition_ptr a_condition) = 0;
 
     virtual ::DDS::ReturnCode_t take_instance_w_condition (
-      ::Messenger::MessageSeq & received_data,
+      ::MyMessenger::MyMessageSeq & received_data,
       ::DDS::SampleInfoSeq & sample_infos,
       ::CORBA::Long max_samples,
       ::DDS::InstanceHandle_t a_handle,
       ::DDS::ReadCondition_ptr a_condition) = 0;
 
     virtual ::DDS::ReturnCode_t read_next_instance (
-      ::Messenger::MessageSeq & received_data,
+      ::MyMessenger::MyMessageSeq & received_data,
       ::DDS::SampleInfoSeq & info_seq,
       ::CORBA::Long max_samples,
       ::DDS::InstanceHandle_t a_handle,
@@ -397,7 +397,7 @@ namespace Messenger
       ::DDS::InstanceStateMask instance_states) = 0;
 
     virtual ::DDS::ReturnCode_t take_next_instance (
-      ::Messenger::MessageSeq & received_data,
+      ::MyMessenger::MyMessageSeq & received_data,
       ::DDS::SampleInfoSeq & info_seq,
       ::CORBA::Long max_samples,
       ::DDS::InstanceHandle_t a_handle,
@@ -406,29 +406,29 @@ namespace Messenger
       ::DDS::InstanceStateMask instance_states) = 0;
 
     virtual ::DDS::ReturnCode_t read_next_instance_w_condition (
-      ::Messenger::MessageSeq & data_values,
+      ::MyMessenger::MyMessageSeq & data_values,
       ::DDS::SampleInfoSeq & sample_infos,
       ::CORBA::Long max_samples,
       ::DDS::InstanceHandle_t previous_handle,
       ::DDS::ReadCondition_ptr a_condition) = 0;
 
     virtual ::DDS::ReturnCode_t take_next_instance_w_condition (
-      ::Messenger::MessageSeq & data_values,
+      ::MyMessenger::MyMessageSeq & data_values,
       ::DDS::SampleInfoSeq & sample_infos,
       ::CORBA::Long max_samples,
       ::DDS::InstanceHandle_t previous_handle,
       ::DDS::ReadCondition_ptr a_condition) = 0;
 
     virtual ::DDS::ReturnCode_t return_loan (
-      ::Messenger::MessageSeq & received_data,
+      ::MyMessenger::MyMessageSeq & received_data,
       ::DDS::SampleInfoSeq & info_seq) = 0;
 
     virtual ::DDS::ReturnCode_t get_key_value (
-      ::Messenger::Message & key_holder,
+      ::MyMessenger::MyMessage & key_holder,
       ::DDS::InstanceHandle_t handle) = 0;
 
     virtual ::DDS::InstanceHandle_t lookup_instance (
-      const ::Messenger::Message & instance_data) = 0;
+      const ::MyMessenger::MyMessage & instance_data) = 0;
 
     // TAO_IDL - Generated from
     // be/be_visitor_interface/interface_ch.cpp:140
@@ -439,23 +439,23 @@ namespace Messenger
   
   protected:
     // Abstract or local interface only.
-    MessageDataReader (void);
+    MyMessageDataReader (void);
 
     
 
-    virtual ~MessageDataReader (void);
+    virtual ~MyMessageDataReader (void);
   
   private:
     // Private and unimplemented for concrete interfaces.
-    MessageDataReader (const MessageDataReader &);
+    MyMessageDataReader (const MyMessageDataReader &);
 
-    void operator= (const MessageDataReader &);
+    void operator= (const MyMessageDataReader &);
   };
 
 // TAO_IDL - Generated from
 // be/be_visitor_module/module_ch.cpp:67
 
-} // module Messenger
+} // module MyMessenger
 
 // TAO_IDL - Generated from
 // be/be_visitor_arg_traits.cpp:68
@@ -481,55 +481,55 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 namespace TAO
 {
 
-#if !defined (_MESSENGER_MESSAGETYPESUPPORT__TRAITS_)
-#define _MESSENGER_MESSAGETYPESUPPORT__TRAITS_
+#if !defined (_MYMESSENGER_MYMESSAGETYPESUPPORT__TRAITS_)
+#define _MYMESSENGER_MYMESSAGETYPESUPPORT__TRAITS_
 
   template<>
-  struct  Objref_Traits< ::Messenger::MessageTypeSupport>
+  struct  Objref_Traits< ::MyMessenger::MyMessageTypeSupport>
   {
-    static ::Messenger::MessageTypeSupport_ptr duplicate (
-        ::Messenger::MessageTypeSupport_ptr p);
+    static ::MyMessenger::MyMessageTypeSupport_ptr duplicate (
+        ::MyMessenger::MyMessageTypeSupport_ptr p);
     static void release (
-        ::Messenger::MessageTypeSupport_ptr p);
-    static ::Messenger::MessageTypeSupport_ptr nil (void);
+        ::MyMessenger::MyMessageTypeSupport_ptr p);
+    static ::MyMessenger::MyMessageTypeSupport_ptr nil (void);
     static ::CORBA::Boolean marshal (
-        const ::Messenger::MessageTypeSupport_ptr p,
+        const ::MyMessenger::MyMessageTypeSupport_ptr p,
         TAO_OutputCDR & cdr);
   };
 
 #endif /* end #if !defined */
 
-#if !defined (_MESSENGER_MESSAGEDATAWRITER__TRAITS_)
-#define _MESSENGER_MESSAGEDATAWRITER__TRAITS_
+#if !defined (_MYMESSENGER_MYMESSAGEDATAWRITER__TRAITS_)
+#define _MYMESSENGER_MYMESSAGEDATAWRITER__TRAITS_
 
   template<>
-  struct  Objref_Traits< ::Messenger::MessageDataWriter>
+  struct  Objref_Traits< ::MyMessenger::MyMessageDataWriter>
   {
-    static ::Messenger::MessageDataWriter_ptr duplicate (
-        ::Messenger::MessageDataWriter_ptr p);
+    static ::MyMessenger::MyMessageDataWriter_ptr duplicate (
+        ::MyMessenger::MyMessageDataWriter_ptr p);
     static void release (
-        ::Messenger::MessageDataWriter_ptr p);
-    static ::Messenger::MessageDataWriter_ptr nil (void);
+        ::MyMessenger::MyMessageDataWriter_ptr p);
+    static ::MyMessenger::MyMessageDataWriter_ptr nil (void);
     static ::CORBA::Boolean marshal (
-        const ::Messenger::MessageDataWriter_ptr p,
+        const ::MyMessenger::MyMessageDataWriter_ptr p,
         TAO_OutputCDR & cdr);
   };
 
 #endif /* end #if !defined */
 
-#if !defined (_MESSENGER_MESSAGEDATAREADER__TRAITS_)
-#define _MESSENGER_MESSAGEDATAREADER__TRAITS_
+#if !defined (_MYMESSENGER_MYMESSAGEDATAREADER__TRAITS_)
+#define _MYMESSENGER_MYMESSAGEDATAREADER__TRAITS_
 
   template<>
-  struct  Objref_Traits< ::Messenger::MessageDataReader>
+  struct  Objref_Traits< ::MyMessenger::MyMessageDataReader>
   {
-    static ::Messenger::MessageDataReader_ptr duplicate (
-        ::Messenger::MessageDataReader_ptr p);
+    static ::MyMessenger::MyMessageDataReader_ptr duplicate (
+        ::MyMessenger::MyMessageDataReader_ptr p);
     static void release (
-        ::Messenger::MessageDataReader_ptr p);
-    static ::Messenger::MessageDataReader_ptr nil (void);
+        ::MyMessenger::MyMessageDataReader_ptr p);
+    static ::MyMessenger::MyMessageDataReader_ptr nil (void);
     static ::CORBA::Boolean marshal (
-        const ::Messenger::MessageDataReader_ptr p,
+        const ::MyMessenger::MyMessageDataReader_ptr p,
         TAO_OutputCDR & cdr);
   };
 
@@ -542,7 +542,7 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 // TAO_IDL - Generated from
 // be/be_codegen.cpp:1703
 #if defined (__ACE_INLINE__)
-#include "MessengerTypeSupportC.inl"
+#include "MyMessengerTypeSupportC.inl"
 #endif /* defined INLINE */
 
 #include /**/ "ace/post.h"
